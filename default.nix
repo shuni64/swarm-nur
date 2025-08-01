@@ -16,8 +16,6 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
-
   # TODO: should probably move python packages into their own file or directory at some point
   a-neuro-who-cant-sing = pkgs.python3Packages.callPackage ./pkgs/a-neuro-who-cant-sing { inherit zengl; };
   zengl = pkgs.python3Packages.callPackage ./pkgs/zengl { };
