@@ -71,7 +71,6 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "A Swarm FM Player for your Computer";
     homepage = "https://github.com/gwashark/swarmfm-player";
-    changelog = "https://github.com/gwashark/swarmfm-player/releases/tag/v${version}";
     mainProgram = "swarmfm-player";
     license = lib.licenses.unfree;
   };
