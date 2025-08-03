@@ -18,12 +18,12 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "swarmfm-player";
-  version = "1.1.0-git";
+  version = "1.1.0";
 
   src = fetchFromGitHub {
-    owner = "anotherswarmfmthing";
-    repo = "temp-swarmfm-player";
-    rev = "03f7eedb99525d7d0a8ce4994084f9b0241bab78";
+    owner = "gwashark";
+    repo = "swarmfm-player";
+    rev = "977983cfbec0ae3374fb1f92848ee0ba1d936162";
     hash = "sha256-Upd5IA8I2ZhCPdsCb3dtlCU8FW4CBT2OVg5uF7brLgg=";
   };
 
