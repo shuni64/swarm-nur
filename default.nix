@@ -20,6 +20,7 @@ rec {
 
   # TODO: should probably move python packages into their own file or directory at some point
   a-neuro-who-cant-sing = pkgs.python3Packages.callPackage ./pkgs/a-neuro-who-cant-sing { inherit zengl; };
+  wl_shimeji = pkgs.python3Packages.callPackage ./pkgs/wl_shimeji { };
   zengl = pkgs.python3Packages.callPackage ./pkgs/zengl { };
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
